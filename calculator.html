@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+
+  <body>
+    <p class="description">Enter your calculation with the buttons. The result will be displayed in the console.</p>
+
+    <div class="calculator">
+      <input class="typedCalculation" placeholder="Type calculation..." onkeyup="
+        putValueInCalculation(event);
+      ">
+      <div class="circular-buttons">
+        <div class="numbers-section">
+          <div class="row">
+            <button onclick="
+              updateCalculation('1');
+            ">1</button>
+      
+            <button onclick="
+              updateCalculation('2');
+            ">2</button>
+      
+            <button onclick="
+              updateCalculation('3');
+            ">3</button>
+          </div>
+      
+          <div class="row">
+            <button onclick="
+              updateCalculation('4');
+            ">4</button>
+      
+            <button onclick="
+              updateCalculation('5');
+            ">5</button>
+      
+            <button onclick="
+              updateCalculation('6');
+            ">6</button>
+          </div>
+      
+          <div class="row">
+            <button onclick="
+              updateCalculation('7');
+            ">7</button>
+      
+            <button onclick="
+              updateCalculation('8');
+            ">8</button>
+      
+            <button onclick="
+              updateCalculation('9');
+            ">9</button>
+          </div>
+      
+          <div class="row">
+            <button onclick="
+              updateCalculation('0');
+            ">0</button>
+      
+            <button onclick="
+              updateCalculation('.');
+            ">.</button>
+      
+            <button onclick="
+              equalButton();
+            ">=</button>
+          </div>
+        </div>
+    
+        <div class="operators-section">
+          <button onclick="
+            updateCalculation('+');
+          ">+</button>
+    
+          <button onclick="
+            updateCalculation('-');
+          ">-</button>
+    
+          <button onclick="
+            updateCalculation('*');
+          ">*</button>
+    
+          <button onclick="
+            updateCalculation('/');
+          ">/</button>
+        </div>
+      </div>
+      <div class="other-buttons">
+        <button onclick="
+          clearButton();
+        ">Clear</button>
+        <button onclick="
+          deleteButton();
+        ">Delete</button>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

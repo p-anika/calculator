@@ -1,0 +1,88 @@
+body {
+  padding: 0 12px;
+  background-color: black;
+}
+
+.description {
+  color: rgb(215, 215, 215);
+  font-weight: 600;
+  font-family: Arial;
+  width: 235px;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.calculator {
+  width: 235px;
+}
+
+.typedCalculation {
+  background-color: black;
+  color: white;
+  font-size: 45px;
+  border: none;
+  width: 235px;
+  font-family: Arial;
+  letter-spacing: 3px;
+  padding: 5px 5px 0px 5px;
+  margin-bottom: 5px;
+}
+
+.typedCalculation::placeholder {
+  font-size: 20px;
+}
+
+.circular-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.circular-buttons button {
+  font-size: 24px;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.numbers-section {
+  width: 170px;
+  margin-right: 19px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0px;
+}
+
+.operators-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.operators-section button {
+  background-color: rgb(254, 160, 10);
+  margin: 6px 0;
+}
+
+.other-buttons {
+  margin-top: 15px;
+}
+
+.other-buttons button {
+  background-color: rgb(254, 150, 10);
+  color: white;
+  font-size: 19px;
+  padding: 6px 2px;
+  width: 77px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 10px;
+}
